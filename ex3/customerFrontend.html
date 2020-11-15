@@ -39,33 +39,33 @@
     <br>
     <br>
 
-    <form action="customerBackend.php" method="POST" onsubmit="compile()">
+    <form action="customerBackend.php" method="POST" onsubmit="validForm()">
 
         <div class="loginInformation">
-                Username: <input id="username" name="username" type="email" placeholder="example@example.com">
-                Password: <input id="password" name="password" type="password">
+                Username: <input id="username" name="username" type="email" placeholder="example@example.com" required>
+                Password: <input id="password" name="password" type="password" required>
         </div>
 
         <div class="whatWeSell">
             <h2>MOJITO: $20.00 a glass</h2>
-            <p>Quantity?: </p> <input id="mojito" name="mojito" type="number" value="0" min="0"> 
+            <p>Quantity?: </p> <input id="mojito" name="mojito" type="number" value="0" min="0" required> 
             <br>
             <br>
 
             <h2>Gin Fizz: $50.00 a glass</h2>
-            <p>Quantity?: </p> <input id="GinFizz" name="GinFizz" type="number" value="0" min="0"> 
+            <p>Quantity?: </p> <input id="GinFizz" name="GinFizz" type="number" value="0" min="0" required> 
             <br>
             <br>
 
             <h2>OLD FASHIONED: $10.00 a glass</h2>
-            <p>Quantity?: </p> <input id="oldFashioned" name="oldFashioned" type="number" value="0" min="0"> 
+            <p>Quantity?: </p> <input id="oldFashioned" name="oldFashioned" type="number" value="0" min="0" required> 
             <br>
             <br>
         </div>
 
         <div class="shippingOptions">
             <h2>Select a shipping speed: </h2>
-            <input type="radio" name="ship" value="Free 7 days" id="speed1">Free 7 days
+            <input type="radio" name="ship" value="Free 7 days" id="speed1" required>Free 7 days
             <br>
             <input type="radio" name="ship" value="$50.00 over night" id="speed1">$50.00 over night
             <br>
